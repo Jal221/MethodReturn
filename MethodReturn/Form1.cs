@@ -32,8 +32,11 @@ namespace MethodReturn
 
             int num1 = Convert.ToInt16(q1Num1Input.Text);
             int num2 = Convert.ToInt16(q1Num2Input.Text);
+            
            
             Add(num1, num2); 
+
+            
 
 
 
@@ -48,7 +51,7 @@ namespace MethodReturn
             /// Input: 6, 2
             /// The area is 18 units squared
 
-
+           
 
             /// 3.  Get a value for question 3 and call the PrintPrice 
             /// method. Accept the returned value and then display it.
@@ -63,16 +66,26 @@ namespace MethodReturn
             /// 
             /// Input: 200
             /// The total price is $100.00
+        }
 
+        public double GetArea(double lenght, double widht)
+        {
+            double area = lenght * widht;
 
-
+            return area;
         }
 
         /// 1. Create a method called Add, that accepts 2 int 
         /// parameters, (x and y), adds them together, and then 
         /// returns the result back to the method call.       
+        public int Add(int x, int y)
+        {
+            int sum = x + y;
+            return sum;
+        }
 
-        public void Add(int x, int y)
+
+        public void GetSum(int x, int y)
         {
             int sum = x + y;
 
